@@ -1,0 +1,12 @@
+<div class="blog-container">
+    <div class="blog-list" *ngIf="titles">
+        <h1>Topics</h1>
+        <ul class="blog-titles-list">
+            <li *ngFor="let blog of titles">
+                <a routerLink="details">{{blog.Title}}</a>
+        </ul>
+    </div>
+    <div class="details">
+        <app-blog-details></app-blog-details>
+    </div>
+</div>
